@@ -1,0 +1,129 @@
+/*global styles*/ 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+}
+
+body, html {
+	height: 100%;
+}
+
+body {
+	font-size: 15px; 
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	flex-direction: column; 
+}
+
+/*color variables*/
+:root {
+	--orange: hsl(31, 77%, 52%);
+	--dark-cyan: hsl(184, 100%, 22%);
+	--v-dark-cyan: hsl(179, 100%, 13%);
+
+	--t-white: hsla(0, 0%, 100%, 0.75);
+	--light-gray: hsl(0, 0%, 95%);
+}
+
+/*card styles*/ 
+.cardContainer {
+	display: flex; 
+	width: 690px; 
+	line-height: 1.5;  
+}
+
+.card {
+	background-color: var(--dark-cyan); 
+	padding: 28px;  
+}
+
+.card__title {
+	color: var(--light-gray); 
+	text-transform: uppercase;
+	font-family: 'Big Shoulders Display', cursive; 
+}
+
+.card__description {
+	color: var(--t-white);
+	line-height: 1.8;  
+}
+
+/*btn styles*/
+
+.btn {
+	border: 0; 
+	padding: 10px 25px;
+	border-radius: 5rem;
+	margin-top: 3rem; 
+	border: 2px solid var(--t-white);
+	cursor: pointer;    
+}
+
+.btn--orange {
+	color: var(--orange); 
+}
+
+.btn--cyan {
+	color: var(--dark-cyan);
+} 
+
+.btn--d-cyan {
+	color: var(--v-dark-cyan);  
+}
+
+.card__icon,
+.card__title,
+.card__description,
+.btn { 
+	margin-bottom: 1rem; 
+	font-family:'Lexend Deca', sans-serif;   
+}
+
+.btn:hover {
+	border: 2px solid var(--t-white); 
+	background: 0;
+	color: var(--t-white);
+}
+
+/*card backgrounds*/
+.card--orange {
+	background: var(--orange); 
+	border-top-left-radius: .5rem;
+	border-bottom-left-radius: .5rem;
+}
+
+.card--cyan {
+	background: var(--dark-cyan); 
+}
+
+.card--d-cyan {
+	background: var(--v-dark-cyan); 
+	border-top-right-radius: .5rem;
+	border-bottom-right-radius: .5rem;  
+} 
+
+
+/*media queary for smaller screen*/
+@media screen and (max-width: 728px) {
+	.cardContainer {
+		width: 250px;
+		flex-direction: column;  
+		height: 100%;  
+	}
+
+	.card {
+		padding: 30px;
+	}
+
+	.card--orange {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+
+	.card--d-cyan { 
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;  
+	}   
+}

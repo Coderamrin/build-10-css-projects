@@ -1,0 +1,98 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ 
+:root {
+	--bright-orange: hsl(31, 77%, 52%);
+	--dark-cyan: hsl(184, 100%, 22%); 
+	--v-dark-cyan: hsl(179, 100%, 13%);
+	--t-white: hsla(0, 0%, 100%, 0.75);
+	--v-l-gray: hsl(0, 0%, 95%);
+}
+
+body, html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+} 
+
+/*cards styles*/
+.cardsContainer {
+	display: flex; 
+	width: 55%;
+	margin: 0 auto; 
+	font-family: 'Lexend Deca'; 
+}
+
+.card {
+	background-color: var(--bright-orange); 
+	color: var(--v-l-gray);
+	padding: 30px;   
+}
+
+.card--orange {
+	border-top-left-radius: .5rem;
+	border-bottom-left-radius: .5rem; 
+}
+
+.card--darkCyan {
+	background-color: var(--dark-cyan);
+}
+
+.card--v-darkCyan {
+	background-color: var(--v-dark-cyan); 
+	border-top-right-radius: .5rem;
+	border-bottom-right-radius: .5rem;  
+} 
+
+.card__icon,
+.card__header {
+	padding-bottom: 1rem;
+	text-transform: uppercase; 
+	font-family: 'Big Shoulders Display', cursive;  
+}
+
+.card__description {
+	color: var(--v-l-gray); 
+	line-height: 1.5;
+}
+
+.card__btn {
+	background-color: hsl(0, 0%, 95%); 
+	border: 0;
+	padding: .8rem 2rem; 
+	border-radius: 2rem; 
+	margin-top: 4rem; 
+	border: 2px solid var(--v-l-gray);
+}
+
+.btn--orange {
+	color: var(--bright-orange); 
+}
+
+.btn--cyan-l {
+	color: var(--dark-cyan);
+}
+
+.btn--cyan-d {
+	color: var(--v-dark-cyan); 
+}
+
+.card__btn:hover {
+	color: var(--v-l-gray); 
+	border: 2px solid var(--v-l-gray); 
+	background: 0; 
+	cursor: pointer; 
+}
+
+/*footer*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+

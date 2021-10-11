@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap'); 
+
+/* global styles */
+* {
+    box-sizing: border-box; 
+    font-family: 'Karla', sans-serif; 
+}
+
+body {
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    background: hsl(204, 43%, 93%);
+} 
+
+/* main design */
+.container {
+    width: 680px; 
+    max-width: 100%;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.10), 0 10px 10px rgba(0,0,0,0.10);   
+}
+
+h2 {
+    font-size: 21px;   
+} 
+
+/* top styles */
+.top {
+    background: #fff; 
+    padding: 40px 30px; 
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px; 
+}
+
+h1 {
+    color: hsl(179, 62%, 43%); 
+}
+
+.top h2 { 
+    color: hsl(71, 73%, 54%);
+}
+
+.top p {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.6; 
+    font-size: 18px; 
+}
+
+/* bottom styles */
+.bottom {
+    color: #fff; 
+    display: flex; 
+}
+
+p, ul {
+    opacity: .7;    
+}
+
+/* left */ 
+
+.left {
+    background: hsl(179, 62%, 43%);
+    flex: 1; 
+    padding: 40px 30px; 
+    border-bottom-left-radius: 5px; 
+}
+
+.left span.big {
+    font-size: 50px;
+    font-weight: 700; 
+    color: #fff;  
+    opacity: 1; 
+    margin-right: 10px;  
+}
+
+button {
+    width: 100%; 
+    border: 0; 
+    background: hsl(71, 73%, 54%);
+    padding: 15px 0; 
+    font-size: 20px; 
+    color: #fff; 
+    font-weight: 700; 
+    border-radius: 5px;  
+    margin-top: 20px;    
+}
+
+/* right */
+
+.right {
+    background: hsl(179, 62%, 46%); 
+    flex: 1; 
+    padding: 40px 30px; 
+    border-bottom-right-radius: 5px; 
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+li {
+    line-height: 1.7;   
+}
+
+@media screen and (max-width:800px) {
+    body {
+        height: auto; 
+    }
+
+    .top,
+    .left,
+    .right {
+        border-radius: 0;  
+    } 
+
+    .bottom {
+        display: block; 
+    }
+}

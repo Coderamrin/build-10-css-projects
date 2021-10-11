@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+
+/* 
+font-family: 'Raleway', sans-serif;  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: hsl(243, 87%, 12%);
+}
+
+.container {
+  width: 1200px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(243, 87%, 12%);
+}
+
+/* header styles */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  margin: 0 25px;
+}
+
+/* hero styles */
+.hero {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.hero > section {
+  flex: 1;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+
+p {
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+
+.left {
+  padding-right: 40px;
+}
+
+input,
+button {
+  padding: 10px 10px;
+}
+
+form input {
+  width: 60%;
+  border: 2px solid hsl(0, 0%, 75%);
+}
+
+form button {
+  width: 30%;
+  margin-left: 10px;
+  background-color: hsl(224, 93%, 58%);
+  border-color: hsl(224, 93%, 58%);
+  color: #fff;
+}
+
+.right {
+  padding-top: 50px;
+}
+
+.right img {
+  width: 100%;
+}
+
+/* section-1 styles */
+
+.section-1 {
+  padding: 3rem 0;
+  background-color: hsl(240, 75%, 98%);
+  position: relative;
+}
+
+.section-1::before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background: url("./images/bg-curve-desktop.svg") no-repeat;
+  position: absolute;
+  top: -80px;
+  left: 0;
+}
+
+.section-container {
+  display: flex;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 25px;
+}
+
+.section-1 p {
+  width: 80%;
+}
+
+.section-1 a {
+  color: hsl(170, 45%, 43%);
+  border-bottom: 2px solid;
+  padding-bottom: 5px;
+}
+
+.box {
+  background-color: #fff;
+  width: 350px;
+  padding: 25px;
+  margin-top: 60px;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0);
+}
+
+.box p {
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.box .author {
+  display: flex;
+  align-items: center;
+}
+
+.author img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.box::before {
+  content: url("./images/icon-quotes.svg");
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+
+/* section 2 */
+.section-2 {
+    background: hsl(238, 22%, 44%); 
+    color: #fff; 
+}
+
+.section-container {
+    align-items: center; 
+}
+
+.section-2 .left {
+    width: 50%;
+}
+
+.section-2 .left h3 {
+  font-size: 1.5rem; 
+  padding-bottom: 2rem; 
+}
+
+.section-2 .right {
+    width: 50%; 
+}
+
+.section-2 form {
+    display: flex; 
+    flex-direction: column;
+}
+
+.section-2 input {
+    width: 100%;
+    margin-bottom: 10px;  
+}
+
+.section-2 button {
+    margin: 0; 
+    width: 50%; 
+}
+ 
+/* footer */
+footer {
+  background: hsl(243, 87%, 12%);
+  color: #fff; 
+}
+
+.footer-container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding-top: 5rem; 
+}
+
+footer ul li {
+  list-style-type: none; 
+  margin-bottom: 10px; 
+}
+
+footer ul li a {
+  color: #fff; 
+}
+
+.footer-container div > * {
+  margin-bottom: 20px; 
+}
+
+.social-icons .fab {
+  margin: 0 10px;
+  padding: 10px; 
+  border: 1px solid #fff;  
+  border-radius: 50%; 
+}
+
+.social-icons .fa-facebook-f {
+  padding: 10px 12px;  
+  display: inline-block; 
+}
+
+/* hover styles */
+
+button:hover {
+  background-color: hsl(224, 93%, 65%);
+  cursor: pointer; 
+} 
+
+.fab:hover {
+  color: hsl(224, 93%, 65%);
+  cursor: pointer;
+} 
+
+/* mobile styles */
+@media screen and (max-width: 1000px) {
+  nav img {
+    width: 100px; 
+  }
+
+  nav li {
+    list-style: none;
+    margin: 0 8px 
+  }
+
+  .hero {
+    flex-direction: column;  
+    text-align: center; 
+  }
+
+  .hero .right {
+    order: -1;  
+    padding-bottom: 5rem; 
+  }
+
+  /* sections */
+  .section-container {
+    flex-direction: column;
+  }
+
+  .section-1  p {
+    width: 100%; 
+  }
+
+  .box {
+    margin: 4rem auto; 
+  }
+
+  .left {
+    padding-right: 0; 
+  }
+
+  .section-2 .left {
+    width: 100%; 
+  }
+
+  .section-2 .right {
+    width: 100%; 
+  }
+
+  .section-2 button {
+    width: 100%; 
+  }
+
+  form button, form input{
+    width: 100%;
+    margin: 10px 0;  
+  }
+
+  .footer-container {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+
+  footer div {
+    margin-bottom: 2rem; 
+  }
+
+}
+

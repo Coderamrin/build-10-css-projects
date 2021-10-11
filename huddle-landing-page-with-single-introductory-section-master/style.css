@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap'); 
+
+/* global syles */
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; 
+    background: hsl(257, 40%, 49%) url("./images/bg-desktop.svg") no-repeat; 
+    padding: 50px 60px;   
+}
+
+/* hader */
+header img {
+    width: 200px; 
+}
+
+/* main styles */
+main {
+    display: flex; 
+    padding-top: 85px; 
+    justify-content: space-between; 
+} 
+
+.left {
+    padding-right: 2.5em; 
+} 
+
+.right {
+    color: #fff;    
+}
+
+h1 {
+    font-size: 2.5em; 
+    font-family: 'Poppins';
+    padding-bottom: 20px; 
+}
+
+p {
+    line-height: 1.7;
+    opacity: .8;  
+}
+
+button {
+    padding: 15px 60px; 
+    margin-top: 30px; 
+    border-radius: 5rem;
+    border: 0; 
+    cursor: pointer; 
+    color: hsl(257, 40%, 49%);
+    font-size: 1em;
+    font-weight: 600;   
+}
+
+button:hover {
+    color: #fff; 
+    background: hsl(300, 69%, 71%); 
+}
+
+/* footer */
+
+footer {
+    text-align: right;  
+}
+
+.fab {
+    border: 2px solid #fff; 
+    padding: 10px 10px; 
+    border-radius: 50%; 
+    margin-left: 20px; 
+    color: #fff;   
+}
+
+.fa-facebook-f {
+    padding: 10px 13px;   
+}
+
+.fab:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%); 
+    cursor: pointer; 
+}  
+
+
+@media screen and (max-width: 1000px) {
+
+    main {
+        flex-direction: column; 
+    }
+
+    .left img {
+        width: 100%; 
+    }
+
+    .right {
+        padding-top: 40px; 
+        text-align: center;  
+    }
+
+    h1  {
+        font-size: 1.8em; 
+    }
+
+    button {
+        padding: 15px 90px; 
+    }
+
+    footer {
+        text-align: center;
+        padding-top: 80px;  
+    } 
+
+}

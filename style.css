@@ -1,5 +1,101 @@
-
 * {
-    font-family: sans-serif; 
+  font-family: sans-serif;
+  margin: 0;
 }
- 
+
+:root {
+  --color-dark: rgb(5, 69, 129);
+  --color-light: rgb(14, 132, 243);
+  --color-white: rgb(223, 229, 235);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--color-white);
+}
+
+/* header */
+header,
+footer {
+  background-color: var(--color-dark);
+  text-align: center;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+footer {
+  margin-top: 2rem; 
+}
+
+/* card styles */
+.card-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 25%;
+  background: #edecf5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.last-card{
+  flex: 0 1 31%;        
+}
+
+.card:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-links,
+.card-title {
+  padding-left: 1rem;
+} 
+
+.tag,
+.card-title {
+  margin-bottom: 0.5rem;
+}
+
+.card-title a {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  color: var(--color-dark);
+}
+
+.card-links {
+  margin-top: auto;
+}
+
+.card-links a {
+  font-size: 20px;
+  margin-left: 10px;
+  color: var(--color-light);
+}

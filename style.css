@@ -15,7 +15,7 @@ a {
 }
 
 .container {
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
 
@@ -39,7 +39,7 @@ header {
 }
 
 footer {
-  margin-top: 2rem; 
+  margin-top: 2rem;
 }
 
 /* card styles */
@@ -59,8 +59,8 @@ footer {
   border-radius: 10px;
 }
 
-.last-card{
-  flex: 0 1 31%;        
+.last-card {
+  flex: 0 1 31%;
 }
 
 .card:hover {
@@ -76,11 +76,12 @@ footer {
 .card-links,
 .card-title {
   padding-left: 1rem;
-} 
+}
 
 .tag,
 .card-title {
   margin-bottom: 0.5rem;
+  margin: 10px;
 }
 
 .card-title a {
@@ -95,7 +96,23 @@ footer {
 }
 
 .card-links a {
-  font-size: 20px;
+  font-size: 2rem;
   margin-left: 10px;
   color: var(--color-light);
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    flex: 1 1 40%;
+  }
+
+  .card-title a {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    flex: 1 1 70%;
+  }
 }
